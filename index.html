@@ -3,1526 +3,475 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Jeramil S. Vegilla | AI Automation & Business Process Specialist</title>
-
-  <meta
-    name="description"
-    content="Jeramil S. Vegilla helps businesses simplify repetitive work, improve operations, and use practical AI automation."
-  />
-
+  <meta name="description" content="Jeramil S. Vegilla designs practical AI automation and business-process systems that improve how work, information, decisions, and leadership attention move through a business." />
   <style>
-    /* =========================
-       BASE
-    ========================== */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #172033;
-      background: #f8fafc;
-      line-height: 1.6;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(1120px, 90%);
-      margin: auto;
-    }
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-label {
-      color: #147d64;
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-      margin-bottom: 18px;
-      color: #10213d;
-    }
-
-    .section-description {
-      max-width: 720px;
-      color: #667085;
-      font-size: 1.05rem;
-    }
-
-    /* =========================
-       NAVIGATION
-    ========================== */
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.96);
-      border-bottom: 1px solid #e8ecf2;
-      backdrop-filter: blur(12px);
-    }
-
-    .nav-inner {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      font-size: 1.15rem;
-      font-weight: 900;
-      color: #10213d;
-    }
-
-    .logo span {
-      color: #147d64;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      list-style: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-    }
-
-    .nav-links a:hover {
-      color: #147d64;
-    }
-
-    /* =========================
-       BUTTONS
-    ========================== */
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 24px;
-      border-radius: 10px;
-      font-weight: 800;
-      transition: 0.2s ease;
-      border: 1px solid transparent;
-    }
-
-    .btn-primary {
-      background: #147d64;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #0f654f;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background: white;
-      border-color: #d9e0e8;
-      color: #172033;
-    }
-
-    .btn-secondary:hover {
-      border-color: #147d64;
-      color: #147d64;
-      transform: translateY(-2px);
-    }
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero {
-      padding: 110px 0 95px;
-      background:
-        radial-gradient(circle at 85% 15%, rgba(20, 125, 100, 0.12), transparent 30%),
-        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      align-items: center;
-      gap: 70px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: #eaf7f3;
-      color: #147d64;
-      font-size: 0.82rem;
-      font-weight: 800;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.8rem, 6vw, 5.3rem);
-      line-height: 0.98;
-      letter-spacing: -3px;
-      color: #10213d;
-      margin-bottom: 24px;
-    }
-
-    .hero h1 span {
-      color: #147d64;
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1.25rem, 2vw, 1.6rem);
-      font-weight: 700;
-      color: #344054;
-      margin-bottom: 16px;
-    }
-
-    .hero-description {
-      color: #667085;
-      max-width: 650px;
-      font-size: 1.08rem;
-      margin-bottom: 32px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .hero-card {
-      background: #10213d;
-      color: white;
-      border-radius: 24px;
-      padding: 38px;
-      box-shadow: 0 25px 60px rgba(16, 33, 61, 0.18);
-    }
-
-    .hero-card-small {
-      color: #90e2cd;
-      font-size: 0.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .hero-card h3 {
-      font-size: 2rem;
-      line-height: 1.15;
-      margin: 12px 0 24px;
-    }
-
-    .hero-process {
-      list-style: none;
-      display: grid;
-      gap: 14px;
-    }
-
-    .hero-process li {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      color: #d9e2f0;
-    }
-
-    .number {
-      min-width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #147d64;
-      color: white;
-      font-weight: 900;
-      font-size: 0.8rem;
-    }
-
-    /* =========================
-       ABOUT
-    ========================== */
-
-    .about {
-      background: white;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .profile-card {
-      min-height: 380px;
-      border-radius: 24px;
-      background:
-        linear-gradient(135deg, #10213d, #17365d);
-      padding: 36px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .profile-photo {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: center 15%;
-    border-radius: 16px;
-    margin-bottom: 24px;
-    position: relative;
-    z-index: 2;
-}
-
-    .profile-card::before {
-      content: "JV";
-      position: absolute;
-      top: -30px;
-      right: 18px;
-      font-size: 10rem;
-      font-weight: 900;
-      color: rgba(255, 255, 255, 0.05);
-    }
-
-    .profile-card h3 {
-      font-size: 2rem;
-      margin-bottom: 6px;
-    }
-
-    .profile-card p {
-      color: #cbd5e1;
-    }
-
-    .about-copy p {
-      color: #667085;
-      margin-bottom: 18px;
-      font-size: 1.04rem;
-    }
-
-    .highlight {
-      color: #172033 !important;
-      font-weight: 700;
-    }
-
-    /* =========================
-       SERVICES
-    ========================== */
-
-    .services {
-      background: #f4f7fa;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-top: 45px;
-    }
-
-    .service-card {
-      background: white;
-      border: 1px solid #e6ebf0;
-      border-radius: 18px;
-      padding: 28px;
-      transition: 0.2s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 40px rgba(16, 33, 61, 0.08);
-    }
-
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: #eaf7f3;
-      display: grid;
-      place-items: center;
-      color: #147d64;
-      font-size: 1.3rem;
-      font-weight: 900;
-      margin-bottom: 20px;
-    }
-
-    .service-card h3 {
-      color: #10213d;
-      margin-bottom: 10px;
-    }
-
-    .service-card p {
-      color: #667085;
-      font-size: 0.94rem;
-    }
-
-    /* =========================
-       PROJECTS
-    ========================== */
-
-    .projects {
-      background: white;
-    }
-
-    .project {
-      margin-top: 70px;
-      padding: 45px;
-      border: 1px solid #e5e9ef;
-      border-radius: 24px;
-      background: #fbfcfd;
-    }
-
-    .project-number {
-      color: #147d64;
-      font-weight: 900;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-    }
-
-    .project-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 30px;
-      margin-bottom: 30px;
-    }
-
-    .project h3 {
-      font-size: clamp(1.7rem, 3vw, 2.4rem);
-      color: #10213d;
-      line-height: 1.15;
-      margin-bottom: 12px;
-    }
-
-    .project-category {
-      display: inline-block;
-      padding: 7px 11px;
-      background: #eaf7f3;
-      color: #147d64;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: 0.78rem;
-      margin-bottom: 12px;
-    }
-
-    .demo-tag {
-      background: #10213d;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    .project-description {
-      color: #667085;
-      max-width: 720px;
-    }
-
-    .comparison {
-      display: grid;
-      grid-template-columns: 1fr 60px 1fr;
-      gap: 18px;
-      align-items: center;
-      margin-top: 35px;
-    }
-
-    .comparison-card {
-      background: white;
-      border: 1px solid #e2e7ed;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 12px 30px rgba(16, 33, 61, 0.06);
-    }
-
-    .comparison-label {
-      padding: 12px 18px;
-      font-weight: 900;
-      text-align: center;
-    }
-
-    .before-label {
-      color: #b42318;
-      background: #fff3f2;
-    }
-
-    .after-label {
-      color: #067647;
-      background: #ecfdf3;
-    }
-
-    .comparison-card img {
-      width: 100%;
-      aspect-ratio: 16 / 10;
-      object-fit: contain;
-      background: white;
-      cursor: pointer;
-    }
-
-    .arrow {
-      font-size: 2rem;
-      text-align: center;
-      color: #147d64;
-      font-weight: 900;
-    }
-
-    .project-info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .info-box {
-      background: white;
-      border-radius: 14px;
-      border: 1px solid #e5e9ef;
-      padding: 20px;
-    }
-
-    .info-box strong {
-      display: block;
-      color: #10213d;
-      margin-bottom: 7px;
-      font-size: 0.88rem;
-      text-transform: uppercase;
-      letter-spacing: 0.7px;
-    }
-
-    .info-box span {
-      color: #667085;
-      font-size: 0.92rem;
-    }
-
-    .disclaimer {
-      margin-top: 22px;
-      padding: 14px 18px;
-      border-radius: 10px;
-      background: #f4f7fa;
-      color: #667085;
-      font-size: 0.83rem;
-    }
-
-    /* =========================
-       EXPERIENCE
-    ========================== */
-
-    .experience {
-      background: #10213d;
-      color: white;
-    }
-
-    .experience .section-title {
-      color: white;
-    }
-
-    .experience .section-description {
-      color: #b7c3d4;
-    }
-
-    .experience-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 45px;
-    }
-
-    .experience-card {
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 18px;
-      padding: 28px;
-      background: rgba(255,255,255,0.04);
-    }
-
-    .experience-card h3 {
-      margin-bottom: 14px;
-      color: #ffffff;
-    }
-
-    .experience-card ul {
-      padding-left: 18px;
-      color: #c9d3df;
-      display: grid;
-      gap: 8px;
-    }
-
-    /* =========================
-       TOOLS
-    ========================== */
-
-    .tools {
-      background: white;
-    }
-
-    .tool-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 35px;
-    }
-
-    .tool {
-      padding: 11px 16px;
-      border: 1px solid #dfe5eb;
-      background: #fbfcfd;
-      border-radius: 999px;
-      font-weight: 700;
-      color: #344054;
-      font-size: 0.9rem;
-    }
-
-    /* =========================
-       PROCESS
-    ========================== */
-
-    .process {
-      background: #f4f7fa;
-    }
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-      margin-top: 45px;
-    }
-
-    .process-card {
-      background: white;
-      border-radius: 16px;
-      padding: 25px 20px;
-      border: 1px solid #e4e9ef;
-    }
-
-    .process-card span {
-      color: #147d64;
-      font-size: 0.8rem;
-      font-weight: 900;
-    }
-
-    .process-card h3 {
-      margin: 10px 0;
-      color: #10213d;
-    }
-
-    .process-card p {
-      font-size: 0.9rem;
-      color: #667085;
-    }
-
-    /* =========================
-       TRAINING
-    ========================== */
-
-    .training {
-      background: white;
-    }
-
-    .training-box {
-      margin-top: 35px;
-      padding: 30px;
-      border-radius: 18px;
-      background: #f8fafc;
-      border: 1px solid #e4e9ef;
-    }
-
-    .training-box p {
-      color: #667085;
-    }
-
-    /* =========================
-       CTA
-    ========================== */
-
-    .cta {
-      background: #147d64;
-      color: white;
-      text-align: center;
-    }
-
-    .cta h2 {
-      max-width: 780px;
-      margin: 0 auto 18px;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.1;
-    }
-
-    .cta p {
-      max-width: 680px;
-      margin: auto;
-      color: #d5f3ea;
-      font-size: 1.05rem;
-    }
-
-    .cta .hero-buttons {
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .cta .btn-primary {
-      background: white;
-      color: #147d64;
-    }
-
-    .cta .btn-secondary {
-      border-color: rgba(255,255,255,0.5);
-      background: transparent;
-      color: white;
-    }
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      background: #0b172a;
-      color: #aeb9c8;
-      padding: 32px 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
-      font-size: 0.88rem;
-    }
-
-    .footer-name {
-      color: white;
-      font-weight: 800;
-    }
-
-    /* =========================
-       IMAGE MODAL
-    ========================== */
-
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 2000;
-      inset: 0;
-      background: rgba(0,0,0,0.88);
-      padding: 30px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .modal img {
-      max-height: 90vh;
-      max-width: 95vw;
-      border-radius: 10px;
-    }
-
-    .modal.show {
-      display: flex;
-    }
-
-    /* =========================
-       MOBILE
-    ========================== */
-
-    @media (max-width: 900px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero-grid,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 80px;
-      }
-
-      .hero-card {
-        max-width: 600px;
-      }
-
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .comparison {
-        grid-template-columns: 1fr;
-      }
-
-      .arrow {
-        transform: rotate(90deg);
-      }
-
-      .project-info {
-        grid-template-columns: 1fr;
-      }
-
-      .experience-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      section {
-        padding: 65px 0;
-      }
-
-      .hero h1 {
-        letter-spacing: -2px;
-      }
-
-      .services-grid,
-      .process-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .project {
-        padding: 25px 18px;
-      }
-
-      .project-top {
-        flex-direction: column;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        text-align: center;
-      }
+    :root {
+      --navy:#0d1f3c;
+      --navy-2:#17365d;
+      --ink:#172033;
+      --muted:#667085;
+      --green:#147d64;
+      --green-dark:#0f654f;
+      --green-soft:#eaf7f3;
+      --blue-soft:#edf5ff;
+      --line:#e4e9ef;
+      --paper:#ffffff;
+      --bg:#f7f9fc;
+      --danger:#b42318;
+      --danger-soft:#fff3f2;
+      --success:#067647;
+      --success-soft:#ecfdf3;
+      --amber:#b54708;
+      --amber-soft:#fff7ed;
+      --shadow:0 20px 55px rgba(16,33,61,.10);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.62}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1160px,90%);margin:auto}
+    section{padding:92px 0}
+
+    .section-label{color:var(--green);font-size:.78rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+    .section-title{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;letter-spacing:-1.5px;color:var(--navy);margin-bottom:18px}
+    .section-description{max-width:760px;color:var(--muted);font-size:1.04rem}
+    .subtle{color:var(--muted)}
+
+    nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);border-bottom:1px solid #e8ecf2;backdrop-filter:blur(14px)}
+    .nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .logo{font-size:1.15rem;font-weight:900;color:var(--navy)}
+    .logo span{color:var(--green)}
+    .nav-links{display:flex;align-items:center;gap:24px;list-style:none;font-size:.88rem;font-weight:800}
+    .nav-links a:hover{color:var(--green)}
+    .nav-cta{padding:10px 15px;border-radius:9px;background:var(--navy);color:#fff;font-size:.82rem;font-weight:800}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:0 24px;border-radius:10px;font-weight:900;transition:.2s ease;border:1px solid transparent}
+    .btn-primary{background:var(--green);color:#fff}
+    .btn-primary:hover{background:var(--green-dark);transform:translateY(-2px)}
+    .btn-secondary{background:#fff;border-color:#d8e0e8;color:var(--ink)}
+    .btn-secondary:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px)}
+
+    .hero{padding:105px 0 88px;background:radial-gradient(circle at 82% 18%,rgba(20,125,100,.14),transparent 28%),linear-gradient(180deg,#fff 0%,#f7f9fc 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;align-items:center;gap:68px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--green-soft);color:var(--green);font-size:.8rem;font-weight:900;margin-bottom:22px}
+    .hero h1{font-size:clamp(3rem,5.6vw,5.05rem);line-height:.98;letter-spacing:-3.6px;color:var(--navy);margin-bottom:22px}
+    .hero h1 span{color:var(--green)}
+    .hero-subtitle{font-size:clamp(1.18rem,2vw,1.5rem);font-weight:800;color:#344054;margin-bottom:15px;max-width:760px}
+    .hero-description{color:var(--muted);max-width:690px;font-size:1.08rem;margin-bottom:30px}
+    .hero-buttons{display:flex;flex-wrap:wrap;gap:13px}
+    .hero-proof{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+    .proof-pill{padding:8px 11px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:.78rem;font-weight:800;color:#475467}
+
+    .hero-card{background:linear-gradient(145deg,var(--navy),#17365d);color:#fff;border-radius:26px;padding:38px;box-shadow:0 28px 65px rgba(16,33,61,.20);position:relative;overflow:hidden}
+    .hero-card:before{content:"AI";position:absolute;right:-10px;bottom:-72px;font-size:12rem;font-weight:900;color:rgba(255,255,255,.035)}
+    .hero-card-small{color:#95ead4;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:2px}
+    .hero-card h3{font-size:2rem;line-height:1.13;margin:12px 0 16px;position:relative}
+    .hero-card p{color:#cbd5e1;position:relative}
+    .formula{margin:24px 0 25px;padding:16px 17px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.055);border-radius:14px;font-weight:800;line-height:1.5;position:relative}
+    .formula strong{color:#9be8d4}
+    .hero-process{list-style:none;display:grid;gap:12px;position:relative}
+    .hero-process li{display:flex;gap:11px;align-items:center;color:#dbe4ef;font-size:.93rem}
+    .number{min-width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:900;font-size:.75rem}
+
+    .philosophy{padding:34px 0;background:var(--navy);color:#fff}
+    .philosophy-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+    .philosophy h2{font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.2;max-width:730px}
+    .philosophy p{color:#c8d4e3}
+    .philosophy-steps{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+    .philosophy-steps span{padding:8px 11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);border-radius:999px;font-size:.78rem;font-weight:800}
+
+    .about{background:#fff}
+    .about-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:68px;align-items:center}
+    .profile-card{border-radius:24px;background:linear-gradient(135deg,var(--navy),var(--navy-2));padding:30px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+    .profile-card:before{content:"JV";position:absolute;top:-42px;right:8px;font-size:10rem;font-weight:900;color:rgba(255,255,255,.045)}
+    .profile-photo{width:100%;height:270px;object-fit:cover;object-position:center 15%;border-radius:16px;margin-bottom:22px;position:relative;z-index:2}
+    .profile-card h3{font-size:1.9rem;margin-bottom:4px;position:relative}
+    .profile-card p{color:#cbd5e1;position:relative}
+    .about-copy p{color:var(--muted);margin-bottom:17px;font-size:1.03rem}
+    .highlight{color:var(--ink)!important;font-weight:800}
+
+    .services{background:#f3f6fa}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}
+    .service-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:27px;transition:.2s ease}
+    .service-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,33,61,.08)}
+    .service-icon{width:48px;height:48px;border-radius:12px;background:var(--green-soft);display:grid;place-items:center;color:var(--green);font-size:1.15rem;font-weight:900;margin-bottom:18px}
+    .service-card h3{color:var(--navy);margin-bottom:9px}
+    .service-card p{color:var(--muted);font-size:.92rem}
+
+    .projects{background:#fff}
+    .project{margin-top:66px;padding:44px;border:1px solid #e2e7ed;border-radius:26px;background:#fbfcfe;box-shadow:0 12px 34px rgba(16,33,61,.045)}
+    .project.flagship{border-color:#cfe2db;background:linear-gradient(180deg,#fff 0%,#f9fcfb 100%)}
+    .project-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;margin-bottom:28px}
+    .project-number{color:var(--green);font-weight:900;letter-spacing:2px;font-size:.8rem;margin-bottom:7px}
+    .project-category{display:inline-block;padding:7px 11px;background:var(--green-soft);color:var(--green);border-radius:999px;font-weight:900;font-size:.75rem;margin-bottom:12px}
+    .project h3{font-size:clamp(1.8rem,3vw,2.55rem);color:var(--navy);line-height:1.12;margin-bottom:12px;letter-spacing:-.8px}
+    .project-description{color:var(--muted);max-width:770px}
+    .demo-tag{background:var(--navy);color:#fff;padding:8px 14px;border-radius:999px;font-size:.75rem;font-weight:900;white-space:nowrap}
+
+    .architecture{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:26px 0 0;padding:18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+    .arch-node{padding:9px 12px;border-radius:9px;background:#f6f8fb;border:1px solid #e2e7ed;font-size:.82rem;font-weight:800;color:#344054}
+    .arch-arrow{color:var(--green);font-weight:900}
+
+    .decision-principle{margin-top:22px;padding:18px 20px;border-left:4px solid var(--green);background:var(--green-soft);border-radius:0 12px 12px 0;color:#285c4e;font-weight:800}
+
+    .before-after-text{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+    .ba-card{border:1px solid var(--line);border-radius:17px;background:#fff;padding:24px}
+    .ba-card h4{margin-bottom:13px;font-size:.83rem;letter-spacing:1.2px;text-transform:uppercase}
+    .ba-card.before h4{color:var(--danger)}
+    .ba-card.after h4{color:var(--success)}
+    .ba-card ul{list-style:none;display:grid;gap:10px;color:#475467;font-size:.92rem}
+    .ba-card li{display:flex;gap:9px}
+    .ba-card.before li:before{content:"×";color:var(--danger);font-weight:900}
+    .ba-card.after li:before{content:"✓";color:var(--success);font-weight:900}
+
+    .comparison{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+    .comparison-card{background:#fff;border:1px solid #dde4ea;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(16,33,61,.055)}
+    .comparison-label{padding:12px 18px;font-weight:900;text-align:center;font-size:.8rem;letter-spacing:1.2px}
+    .before-label{color:var(--danger);background:var(--danger-soft)}
+    .after-label{color:var(--success);background:var(--success-soft)}
+    .comparison-card img{width:100%;aspect-ratio:3/4;object-fit:contain;background:#fff;cursor:pointer}
+    .workflow-shot{margin-top:20px;border:1px solid var(--line);background:#fff;border-radius:16px;padding:16px}
+    .workflow-shot img{width:100%;border-radius:10px;cursor:pointer}
+    .workflow-caption{margin-top:9px;color:var(--muted);font-size:.8rem;text-align:center}
+
+    .project-info{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:27px}
+    .info-box{background:#fff;border-radius:14px;border:1px solid var(--line);padding:20px}
+    .info-box strong{display:block;color:var(--navy);margin-bottom:7px;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px}
+    .info-box span{color:var(--muted);font-size:.9rem}
+    .metric-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+    .metric-chip{padding:9px 12px;border-radius:999px;background:var(--blue-soft);border:1px solid #d8e8fb;color:#295783;font-size:.78rem;font-weight:900}
+    .disclaimer{margin-top:20px;padding:14px 17px;border-radius:10px;background:#f2f5f8;color:var(--muted);font-size:.8rem}
+
+    .additional{margin-top:70px}
+    .additional-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .mini-project{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .mini-project img{width:100%;aspect-ratio:16/10;object-fit:contain;border-bottom:1px solid var(--line);background:#fff;cursor:pointer}
+    .mini-project-body{padding:21px}
+    .mini-project h4{color:var(--navy);font-size:1.08rem;line-height:1.25;margin-bottom:8px}
+    .mini-project p{color:var(--muted);font-size:.88rem}
+    .mini-project .mini-label{font-size:.7rem;text-transform:uppercase;letter-spacing:1.2px;font-weight:900;color:var(--green);margin-bottom:8px}
+
+    .experience{background:var(--navy);color:#fff}
+    .experience .section-title{color:#fff}.experience .section-description{color:#b9c6d7}
+    .experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}
+    .experience-card{border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:27px;background:rgba(255,255,255,.04)}
+    .experience-card h3{margin-bottom:13px}.experience-card ul{padding-left:18px;color:#cbd5e1;display:grid;gap:7px;font-size:.92rem}
+
+    .process{background:#f3f6fa}
+    .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-top:42px}
+    .process-card{background:#fff;border-radius:16px;padding:24px 19px;border:1px solid var(--line)}
+    .process-card span{color:var(--green);font-size:.76rem;font-weight:900}.process-card h3{margin:9px 0;color:var(--navy)}.process-card p{font-size:.88rem;color:var(--muted)}
+
+    .tools{background:#fff}
+    .tool-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+    .tool-group{border:1px solid var(--line);border-radius:17px;padding:22px;background:#fbfcfd}
+    .tool-group h3{font-size:1rem;color:var(--navy);margin-bottom:13px}
+    .tool-grid{display:flex;flex-wrap:wrap;gap:8px}
+    .tool{padding:8px 11px;border:1px solid #dfe5eb;background:#fff;border-radius:999px;font-weight:800;color:#475467;font-size:.8rem}
+
+    .cta{background:linear-gradient(135deg,var(--green),#0e6a55);color:#fff;text-align:center}
+    .cta h2{max-width:800px;margin:0 auto 17px;font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;letter-spacing:-1.5px}
+    .cta p{max-width:730px;margin:auto;color:#d8f4ed;font-size:1.04rem}
+    .cta .hero-buttons{justify-content:center;margin-top:28px}
+    .cta .btn-primary{background:#fff;color:var(--green)}
+    .cta .btn-secondary{border-color:rgba(255,255,255,.5);background:transparent;color:#fff}
+
+    footer{background:#091629;color:#aeb9c8;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:25px;font-size:.86rem}.footer-name{color:#fff;font-weight:800}
+
+    .modal{display:none;position:fixed;z-index:2000;inset:0;background:rgba(0,0,0,.9);padding:30px;align-items:center;justify-content:center;cursor:zoom-out}.modal img{max-height:92vh;max-width:95vw;border-radius:10px}.modal.show{display:flex}
+
+    @media(max-width:950px){
+      .nav-links{display:none}.hero-grid,.about-grid,.philosophy-inner{grid-template-columns:1fr}.philosophy-steps{justify-content:flex-start}.services-grid{grid-template-columns:repeat(2,1fr)}.project-info,.additional-grid,.experience-grid,.tool-groups{grid-template-columns:1fr}.process-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:700px){
+      section{padding:68px 0}.hero{padding-top:78px}.hero h1{letter-spacing:-2.4px}.nav-cta{display:none}.services-grid,.process-grid,.comparison,.before-after-text{grid-template-columns:1fr}.project{padding:27px 19px}.project-top{flex-direction:column}.hero-card{padding:29px}.footer-inner{flex-direction:column;text-align:center}
     }
   </style>
 </head>
-
 <body>
-
-  <!-- NAVIGATION -->
   <nav>
     <div class="container nav-inner">
       <a href="#top" class="logo">Jeramil<span>.</span></a>
-
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#systems">Flagship Systems</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Automation Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a class="nav-cta" href="mailto:vajeramil01@gmail.com">Discuss a Process</a>
     </div>
   </nav>
 
-
-  <!-- HERO -->
   <header class="hero" id="top">
     <div class="container hero-grid">
-
       <div>
-        <div class="eyebrow">AI Automation • Operations • Business Support</div>
-
-        <h1>
-          Jeramil S.<br>
-          <span>Vegilla</span>
-        </h1>
-
-        <div class="hero-subtitle">
-          AI Automation & Business Process Specialist
-        </div>
-
+        <div class="eyebrow">Jeramil S. Vegilla • AI Automation & Business Process Specialist</div>
+        <h1>Turn process noise into <span>business leverage.</span></h1>
+        <div class="hero-subtitle">I design AI-assisted systems that improve how work, information, decisions, and leadership attention move through a business.</div>
         <p class="hero-description">
-          I help businesses simplify repetitive work, improve operational
-          processes, and use practical AI and automation so teams can spend
-          more time on higher-value work.
+          From routine workflow automation to executive decision and signal-routing systems, I combine AI interpretation, deterministic logic, human judgment, and measurable process design so teams can focus on higher-value work.
         </p>
-
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+          <a href="#systems" class="btn btn-primary">Explore Flagship Systems</a>
+          <a href="#contact" class="btn btn-secondary">Start With a Process</a>
+        </div>
+        <div class="hero-proof">
+          <span class="proof-pill">Decision & signal systems</span>
+          <span class="proof-pill">Human-in-the-loop</span>
+          <span class="proof-pill">Deterministic guardrails</span>
+          <span class="proof-pill">KPI-ready workflows</span>
         </div>
       </div>
-
 
       <div class="hero-card">
-        <div class="hero-card-small">My approach</div>
-
-        <h3>
-          Business problem first.<br>
-          Automation second.
-        </h3>
-
+        <div class="hero-card-small">Where automation earns its place</div>
+        <h3>AI interprets.<br>Rules protect. Humans decide.</h3>
+        <p>The strongest workflow is not the one with the most automation. It is the one that uses the right kind of intelligence at the right point in the process.</p>
+        <div class="formula"><strong>Human Judgment</strong> + AI Leverage + Automation + Measurable Business Value</div>
         <ul class="hero-process">
-          <li><span class="number">1</span> Understand the current process</li>
-          <li><span class="number">2</span> Identify repetitive work or bottlenecks</li>
-          <li><span class="number">3</span> Simplify what can be improved</li>
-          <li><span class="number">4</span> Automate where it makes business sense</li>
-          <li><span class="number">5</span> Measure the intended improvement</li>
+          <li><span class="number">1</span> Ambiguous information → AI interpretation</li>
+          <li><span class="number">2</span> Repeatable boundaries → deterministic logic</li>
+          <li><span class="number">3</span> Routine work → automation or delegation</li>
+          <li><span class="number">4</span> High-impact actions → human control</li>
+          <li><span class="number">5</span> Outcomes → logged and measured</li>
         </ul>
       </div>
-
     </div>
   </header>
 
+  <section class="philosophy">
+    <div class="container philosophy-inner">
+      <h2>Find what creates value. Remove what does not. Amplify what does. Measure the result.</h2>
+      <div class="philosophy-steps">
+        <span>Understand</span><span>Identify</span><span>Simplify</span><span>Automate</span><span>Measure</span>
+      </div>
+    </div>
+  </section>
 
-  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container about-grid">
-
       <div class="profile-card">
         <img src="jeramil-profile.png" alt="Jeramil S. Vegilla" class="profile-photo">
         <h3>Jeramil S. Vegilla</h3>
-        <p>
-          AI Automation • Sales & Lead Generation • Virtual Assistance
-        </p>
+        <p>AI Automation • Process Improvement • Business Operations</p>
       </div>
-
       <div class="about-copy">
-
         <div class="section-label">About Me</div>
-
-        <h2 class="section-title">
-          I work at the intersection of business operations and automation.
-        </h2>
-
-        <p>
-          My background includes virtual assistance, sales and lead generation,
-          business research, customer communication, social media support,
-          and AI automation.
-        </p>
-
-        <p>
-          Working inside day-to-day business processes has helped me understand
-          where teams lose time through repetitive tasks, manual follow-ups,
-          disconnected information, and unnecessary administrative work.
-        </p>
-
-        <p class="highlight">
-          My goal is not to automate everything. I look for practical ways to
-          help people work more efficiently while keeping human judgment where
-          it creates the most value.
-        </p>
-
+        <h2 class="section-title">I work at the intersection of business operations, human judgment, and automation.</h2>
+        <p>My background includes sales and lead generation, business research, client communication, virtual assistance, customer support, and hands-on automation work.</p>
+        <p>That operational experience helps me see where businesses lose capacity through repetitive work, unclear ownership, disconnected information, manual follow-up, and unnecessary escalation.</p>
+        <p class="highlight">My goal is not to replace people with automation. It is to improve the system around them so human attention is used where it creates the most value.</p>
       </div>
     </div>
   </section>
 
+  <section class="projects" id="systems">
+    <div class="container">
+      <div class="section-label">Flagship Systems</div>
+      <h2 class="section-title">Automation that changes how work and leadership attention move.</h2>
+      <p class="section-description">These demo systems go beyond simple task automation. They combine business-process design, AI interpretation, deterministic logic, human control, and measurable KPI frameworks.</p>
 
-  <!-- SERVICES -->
+      <article class="project flagship">
+        <div class="project-top">
+          <div>
+            <div class="project-number">FLAGSHIP SYSTEM 01</div>
+            <div class="project-category">Decision Operations • Executive Search Demo</div>
+            <h3>Decision Leverage Engine</h3>
+            <p class="project-description">A decision-support workflow designed to separate routine decisions from leadership decisions, prepare decision context, surface missing information and risks, and protect senior leadership attention without allowing AI to become the executive.</p>
+          </div>
+          <div class="demo-tag">Built MVP</div>
+        </div>
+
+        <div class="architecture">
+          <span class="arch-node">Decision Intake</span><span class="arch-arrow">→</span>
+          <span class="arch-node">AI Analysis</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Routine / Material / Critical</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Escalation Logic</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Human Approval</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Decision Log</span>
+        </div>
+
+        <div class="decision-principle">AI prepares judgment. Humans exercise judgment.</div>
+
+        <div class="before-after-text">
+          <div class="ba-card before">
+            <h4>Before</h4>
+            <ul>
+              <li>Routine issues are escalated upward.</li>
+              <li>Leaders repeatedly reconstruct context.</li>
+              <li>Risks and missing information are inconsistent.</li>
+              <li>Operational decisions consume leadership attention.</li>
+              <li>Decision reasoning is difficult to review later.</li>
+            </ul>
+          </div>
+          <div class="ba-card after">
+            <h4>After</h4>
+            <ul>
+              <li>Decision context is structured before review.</li>
+              <li>Routine matters remain within appropriate authority.</li>
+              <li>High-impact decisions reach leadership with a concise brief.</li>
+              <li>Human approval remains required for important decisions.</li>
+              <li>Decision history and human reasoning are logged.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <div class="info-box"><strong>Business Problem</strong><span>Too many routine decisions compete with higher-value leadership work.</span></div>
+          <div class="info-box"><strong>System Design</strong><span>Structured intake, AI reasoning, escalation logic, human approval, and auditable logging.</span></div>
+          <div class="info-box"><strong>Designed to Improve</strong><span>Leadership capacity • Decision preparation • Escalation quality • Documentation</span></div>
+        </div>
+        <div class="metric-row"><span class="metric-chip">Primary KPI: Leadership Escalation Rate</span><span class="metric-chip">Human Overrides</span><span class="metric-chip">Decision Confidence</span><span class="metric-chip">Leadership Attention Recovered</span></div>
+        <div class="disclaimer">Demo project built to demonstrate AI automation and business-process improvement capabilities. KPI definitions and outcomes shown are design objectives and test frameworks, not claimed client results.</div>
+      </article>
+
+      <article class="project flagship">
+        <div class="project-top">
+          <div>
+            <div class="project-number">FLAGSHIP SYSTEM 02</div>
+            <div class="project-category">Signal Operations • Executive Search Demo</div>
+            <h3>Executive Signal Firewall</h3>
+            <p class="project-description">A signal-routing system designed to protect high-value leadership attention while making sure important client risks, candidate issues, revenue opportunities, operational problems, and internal requests reach the right owner at the right time.</p>
+          </div>
+          <div class="demo-tag">Built MVP</div>
+        </div>
+
+        <div class="architecture">
+          <span class="arch-node">Signal Intake</span><span class="arch-arrow">→</span>
+          <span class="arch-node">AI Classification</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Deterministic Guardrail</span><span class="arch-arrow">→</span>
+          <span class="arch-node">IGNORE / LOG / DELEGATE / ESCALATE</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Human Review</span><span class="arch-arrow">→</span>
+          <span class="arch-node">Signal Log</span>
+        </div>
+
+        <div class="comparison">
+          <div class="comparison-card">
+            <div class="comparison-label before-label">BEFORE</div>
+            <img src="images/signal-firewall-before.png" alt="Executive Signal Firewall before: important and unimportant signals mixed together" onclick="openImage(this.src)">
+          </div>
+          <div class="comparison-card">
+            <div class="comparison-label after-label">AFTER</div>
+            <img src="images/signal-firewall-after.png" alt="Executive Signal Firewall after: signals classified and routed to the correct owner" onclick="openImage(this.src)">
+          </div>
+        </div>
+
+        <div class="workflow-shot">
+          <img src="images/signal-firewall-workflow.png" alt="Final n8n Executive Signal Firewall workflow" onclick="openImage(this.src)">
+          <div class="workflow-caption">Final n8n MVP: structured AI analysis + deterministic routing guardrail + human escalation + same-row audit logging.</div>
+        </div>
+
+        <div class="project-info">
+          <div class="info-box"><strong>Business Problem</strong><span>Important and unimportant signals arrive together, creating leadership noise and missed-risk potential.</span></div>
+          <div class="info-box"><strong>System Design</strong><span>AI classification, deterministic guardrails, four routing actions, human escalation, and Google Sheets audit logging.</span></div>
+          <div class="info-box"><strong>Designed to Improve</strong><span>Signal quality • Ownership clarity • Escalation speed • Leadership focus • Opportunity visibility</span></div>
+        </div>
+        <div class="metric-row"><span class="metric-chip">Leadership Signal Escalation Rate</span><span class="metric-chip">Human Overrides</span><span class="metric-chip">Critical Risks Detected</span><span class="metric-chip">Leadership Interruptions Avoided</span></div>
+        <div class="disclaimer">Demo project validated with mock executive-search scenarios. The workflow successfully routes IGNORE, LOG, DELEGATE, and ESCALATE signals and captures human response data. No client performance results are claimed.</div>
+      </article>
+
+      <div class="additional">
+        <div class="section-label">Additional Automation Examples</div>
+        <h3 class="section-title" style="font-size:clamp(1.7rem,3vw,2.35rem)">Supporting workflow demonstrations.</h3>
+        <p class="section-description">Earlier projects demonstrate practical automation across sales, onboarding, and customer operations.</p>
+        <div class="additional-grid">
+          <article class="mini-project">
+            <img src="images/lead-after.png" alt="AI lead qualification workflow" onclick="openImage(this.src)">
+            <div class="mini-project-body"><div class="mini-label">Sales Operations</div><h4>AI Lead Qualification & Follow-Up</h4><p>Analyzes, scores, categorizes, routes, and supports consistent follow-up for incoming leads.</p></div>
+          </article>
+          <article class="mini-project">
+            <img src="images/onboarding-after.png" alt="Automated candidate onboarding workflow" onclick="openImage(this.src)">
+            <div class="mini-project-body"><div class="mini-label">Business Operations</div><h4>Automated Candidate Onboarding</h4><p>Organizes intake data, triggers process steps, notifies teams, and improves onboarding visibility.</p></div>
+          </article>
+          <article class="mini-project">
+            <img src="images/vip-after.png" alt="VIP customer detection workflow" onclick="openImage(this.src)">
+            <div class="mini-project-body"><div class="mini-label">Customer Operations</div><h4>VIP Customer Detection & Alerts</h4><p>Evaluates customer criteria, detects priority accounts, alerts the team, and supports timely follow-up.</p></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="services" id="services">
     <div class="container">
-
-      <div class="section-label">What I Can Help With</div>
-
-      <h2 class="section-title">
-        Practical support for growing businesses.
-      </h2>
-
-      <p class="section-description">
-        My work combines automation capability with hands-on experience in
-        sales, lead generation, customer support, and business administration.
-      </p>
-
+      <div class="section-label">What I Help Businesses Improve</div>
+      <h2 class="section-title">Practical systems built around the business problem.</h2>
+      <p class="section-description">Automation is the implementation layer. The work begins with understanding what is slowing the business down, where attention is being wasted, and where better information flow can create value.</p>
       <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon">AI</div>
-          <h3>AI Automation</h3>
-          <p>
-            Lead qualification, follow-up workflows, data processing,
-            notifications, information routing, and repetitive task automation.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">↗</div>
-          <h3>Business Process Improvement</h3>
-          <p>
-            Identify repetitive work, workflow bottlenecks, unnecessary
-            handoffs, and opportunities to simplify day-to-day operations.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">◎</div>
-          <h3>Lead Generation & Sales Support</h3>
-          <p>
-            Prospect research, market research, personalized outreach,
-            lead organization, follow-ups, and prospect management.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">✓</div>
-          <h3>Virtual Assistance</h3>
-          <p>
-            Administrative support, data entry, research, customer
-            communication, scheduling, content support, and business tasks.
-          </p>
-        </div>
-
+        <div class="service-card"><div class="service-icon">AI</div><h3>AI & Workflow Automation</h3><p>Routing, follow-up, notifications, data processing, approvals, information handling, and repetitive operational workflows.</p></div>
+        <div class="service-card"><div class="service-icon">↗</div><h3>Business Process Improvement</h3><p>Identify unnecessary handoffs, repetitive work, bottlenecks, decision friction, and missed opportunities before automating.</p></div>
+        <div class="service-card"><div class="service-icon">◎</div><h3>Decision & Signal Systems</h3><p>Use AI to classify information, prepare context, protect leadership attention, and keep high-impact decisions human-controlled.</p></div>
+        <div class="service-card"><div class="service-icon">✓</div><h3>Operations & Business Support</h3><p>Sales support, research, client communication, administrative execution, and human support when automation alone is not the answer.</p></div>
       </div>
     </div>
   </section>
 
-
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="container">
-
-      <div class="section-label">Featured Automation Projects</div>
-
-      <h2 class="section-title">
-        Before → After: Process Improvement
-      </h2>
-
-      <p class="section-description">
-        These demo projects show how manual business workflows can be redesigned
-        using practical automation and AI.
-      </p>
-
-
-      <!-- PROJECT 1 -->
-      <article class="project">
-
-        <div class="project-top">
-
-          <div>
-            <div class="project-number">PROJECT 01</div>
-            <div class="project-category">Sales Operations</div>
-
-            <h3>
-              AI Lead Qualification & Follow-Up System
-            </h3>
-
-            <p class="project-description">
-              A workflow designed to reduce repetitive lead screening and create
-              a more consistent process for analyzing, qualifying, categorizing,
-              routing, and following up with incoming leads.
-            </p>
-          </div>
-
-          <div class="demo-tag">Demo Project</div>
-
-        </div>
-
-
-        <div class="comparison">
-
-          <div class="comparison-card">
-            <div class="comparison-label before-label">BEFORE</div>
-            <img
-              src="images/lead-before.png"
-              alt="Manual lead qualification workflow before automation"
-              onclick="openImage(this.src)"
-            >
-          </div>
-
-          <div class="arrow">→</div>
-
-          <div class="comparison-card">
-            <div class="comparison-label after-label">AFTER</div>
-            <img
-              src="images/lead-after.png"
-              alt="AI lead qualification workflow after automation"
-              onclick="openImage(this.src)"
-            >
-          </div>
-
-        </div>
-
-
-        <div class="project-info">
-
-          <div class="info-box">
-            <strong>Problem</strong>
-            <span>
-              Manual lead review, qualification, assignment, and follow-up.
-            </span>
-          </div>
-
-          <div class="info-box">
-            <strong>Solution</strong>
-            <span>
-              Automated analysis, scoring, categorization, routing,
-              notifications, and follow-up.
-            </span>
-          </div>
-
-          <div class="info-box">
-            <strong>Designed to Improve</strong>
-            <span>
-              Response speed • Qualification consistency • Sales-team capacity
-            </span>
-          </div>
-
-        </div>
-
-        <div class="disclaimer">
-          Built as a demonstration of my AI automation and business-process
-          improvement capabilities. Outcomes shown are intended design goals,
-          not claimed client results.
-        </div>
-
-      </article>
-
-
-      <!-- PROJECT 2 -->
-      <article class="project">
-
-        <div class="project-top">
-
-          <div>
-            <div class="project-number">PROJECT 02</div>
-            <div class="project-category">Business Operations</div>
-
-            <h3>
-              Automated Employee / Candidate Onboarding
-            </h3>
-
-            <p class="project-description">
-              A workflow designed to reduce manual onboarding administration by
-              organizing candidate information, triggering documents and tasks,
-              notifying the relevant team, and maintaining process visibility.
-            </p>
-          </div>
-
-          <div class="demo-tag">Demo Project</div>
-
-        </div>
-
-
-        <div class="comparison">
-
-          <div class="comparison-card">
-            <div class="comparison-label before-label">BEFORE</div>
-            <img
-              src="images/onboarding-before.png"
-              alt="Manual candidate onboarding workflow before automation"
-              onclick="openImage(this.src)"
-            >
-          </div>
-
-          <div class="arrow">→</div>
-
-          <div class="comparison-card">
-            <div class="comparison-label after-label">AFTER</div>
-            <img
-              src="images/onboarding-after.png"
-              alt="Automated candidate onboarding workflow"
-              onclick="openImage(this.src)"
-            >
-          </div>
-
-        </div>
-
-
-        <div class="project-info">
-
-          <div class="info-box">
-            <strong>Problem</strong>
-            <span>
-              Manual data entry, document handling, internal notifications,
-              and status tracking.
-            </span>
-          </div>
-
-          <div class="info-box">
-            <strong>Solution</strong>
-            <span>
-              Automated information organization, document workflows,
-              notifications, and tracking.
-            </span>
-          </div>
-
-          <div class="info-box">
-            <strong>Designed to Improve</strong>
-            <span>
-              Onboarding speed • Process consistency • Team efficiency
-            </span>
-          </div>
-
-        </div>
-
-        <div class="disclaimer">
-          Built as a demonstration of my AI automation and business-process
-          improvement capabilities. Outcomes shown are intended design goals,
-          not claimed client results.
-        </div>
-
-      </article>
-
-
-      <!-- PROJECT 3 -->
-      <article class="project">
-
-        <div class="project-top">
-
-          <div>
-            <div class="project-number">PROJECT 03</div>
-            <div class="project-category">Customer Operations / E-commerce</div>
-
-            <h3>
-              E-commerce VIP Customer Detection & Alert System
-            </h3>
-
-            <p class="project-description">
-              A workflow designed to automatically evaluate purchase criteria,
-              identify priority customers, classify them, alert the right team,
-              and support timely personalized follow-up.
-            </p>
-          </div>
-
-          <div class="demo-tag">Demo Project</div>
-
-        </div>
-
-
-        <div class="comparison">
-
-          <div class="comparison-card">
-            <div class="comparison-label before-label">BEFORE</div>
-            <img
-              src="images/vip-before.png"
-              alt="Manual ecommerce VIP customer detection workflow"
-              onclick="openImage(this.src)"
-            >
-          </div>
-
-          <div class="arrow">→</div>
-
-          <div class="comparison-card">
-            <div class="comparison-label after-label">AFTER</div>
-            <img
-              src="images/vip-after.png"
-              alt="Automated ecommerce VIP customer detection workflow"
-              onclick="openImage(this.src)"
-            >
-          </div>
-
-        </div>
-
-
-        <div class="project-info">
-
-          <div class="info-box">
-            <strong>Problem</strong>
-            <span>
-              Manual monitoring can delay identification of high-value
-              customers and timely follow-up.
-            </span>
-          </div>
-
-          <div class="info-box">
-            <strong>Solution</strong>
-            <span>
-              Automated customer evaluation, VIP classification,
-              team alerts, and follow-up triggers.
-            </span>
-          </div>
-
-          <div class="info-box">
-            <strong>Designed to Improve</strong>
-            <span>
-              VIP response speed • Customer recognition consistency • Team efficiency
-            </span>
-          </div>
-
-        </div>
-
-        <div class="disclaimer">
-          Built as a demonstration of my AI automation and business-process
-          improvement capabilities. Outcomes shown are intended design goals,
-          not claimed client results.
-        </div>
-
-      </article>
-
-    </div>
-  </section>
-
-
-  <!-- EXPERIENCE -->
   <section class="experience" id="experience">
     <div class="container">
-
       <div class="section-label">Supporting Experience</div>
-
-      <h2 class="section-title">
-        I understand the work behind the workflow.
-      </h2>
-
-      <p class="section-description">
-        My automation work is supported by hands-on experience with the
-        everyday processes businesses actually manage.
-      </p>
-
-
+      <h2 class="section-title">I understand the work behind the workflow.</h2>
+      <p class="section-description">My automation work is grounded in hands-on experience with the everyday processes businesses actually manage.</p>
       <div class="experience-grid">
-
-        <div class="experience-card">
-          <h3>Sales & Lead Generation</h3>
-
-          <ul>
-            <li>Business and prospect research</li>
-            <li>Lead generation</li>
-            <li>Market research</li>
-            <li>Personalized email outreach</li>
-            <li>Prospect management</li>
-            <li>Follow-up support</li>
-          </ul>
-        </div>
-
-
-        <div class="experience-card">
-          <h3>Virtual Assistance</h3>
-
-          <ul>
-            <li>Data entry</li>
-            <li>Email management</li>
-            <li>Calendar management</li>
-            <li>Travel management</li>
-            <li>Research</li>
-            <li>Administrative support</li>
-          </ul>
-        </div>
-
-
-        <div class="experience-card">
-          <h3>Social Media & Business Support</h3>
-
-          <ul>
-            <li>Content scheduling</li>
-            <li>Basic content creation</li>
-            <li>Caption writing</li>
-            <li>Comment and message monitoring</li>
-            <li>Customer inquiries</li>
-            <li>Basic performance tracking</li>
-          </ul>
-        </div>
-
+        <div class="experience-card"><h3>Sales & Partnerships</h3><ul><li>Prospect and company research</li><li>Lead generation</li><li>Personalized outreach</li><li>Client communication</li><li>Prospect management</li><li>Follow-up support</li></ul></div>
+        <div class="experience-card"><h3>Operations & Virtual Assistance</h3><ul><li>Data and spreadsheet management</li><li>Email and calendar support</li><li>Research and documentation</li><li>Administrative coordination</li><li>Process tracking</li><li>Business support</li></ul></div>
+        <div class="experience-card"><h3>Customer & Digital Support</h3><ul><li>Customer inquiries</li><li>Message monitoring</li><li>Content scheduling</li><li>Basic performance tracking</li><li>Social support</li><li>Digital business assistance</li></ul></div>
       </div>
     </div>
   </section>
 
-
-  <!-- TOOLS -->
-  <section class="tools">
-    <div class="container">
-
-      <div class="section-label">Tools I Work With</div>
-
-      <h2 class="section-title">
-        Technology is the toolbox, not the strategy.
-      </h2>
-
-      <p class="section-description">
-        I use different tools depending on the workflow and business problem.
-      </p>
-
-
-      <div class="tool-grid">
-
-        <div class="tool">ChatGPT</div>
-        <div class="tool">Zapier</div>
-        <div class="tool">n8n</div>
-        <div class="tool">Google Sheets</div>
-        <div class="tool">Google Drive</div>
-        <div class="tool">Gmail</div>
-        <div class="tool">Google Calendar</div>
-        <div class="tool">Slack</div>
-        <div class="tool">Trello</div>
-        <div class="tool">Notion</div>
-        <div class="tool">Zendesk</div>
-        <div class="tool">Meta</div>
-        <div class="tool">Canva</div>
-        <div class="tool">CapCut</div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PROCESS -->
   <section class="process" id="process">
     <div class="container">
-
       <div class="section-label">How I Work</div>
-
-      <h2 class="section-title">
-        Understand → Identify → Simplify → Automate → Measure
-      </h2>
-
-      <p class="section-description">
-        I prefer to understand the business process before recommending
-        technology.
-      </p>
-
-
+      <h2 class="section-title">Understand → Identify → Simplify → Automate → Measure</h2>
+      <p class="section-description">I prefer to understand the operation before recommending technology.</p>
       <div class="process-grid">
-
-        <div class="process-card">
-          <span>01</span>
-          <h3>Understand</h3>
-          <p>
-            Learn how the current process works and what the team is trying to achieve.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>02</span>
-          <h3>Identify</h3>
-          <p>
-            Find repetitive work, delays, bottlenecks, or missed opportunities.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>03</span>
-          <h3>Simplify</h3>
-          <p>
-            Determine whether unnecessary steps can be removed or improved first.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>04</span>
-          <h3>Automate</h3>
-          <p>
-            Apply practical automation and AI where it makes business sense.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>05</span>
-          <h3>Measure</h3>
-          <p>
-            Review how the redesigned process affects time, consistency, and capacity.
-          </p>
-        </div>
-
+        <div class="process-card"><span>01</span><h3>Understand</h3><p>Learn the current workflow, business outcome, users, and constraints.</p></div>
+        <div class="process-card"><span>02</span><h3>Identify</h3><p>Find repetitive work, delays, bottlenecks, noise, and missed opportunities.</p></div>
+        <div class="process-card"><span>03</span><h3>Simplify</h3><p>Remove or improve unnecessary steps before adding automation.</p></div>
+        <div class="process-card"><span>04</span><h3>Automate</h3><p>Apply deterministic logic and AI where interpretation genuinely creates value.</p></div>
+        <div class="process-card"><span>05</span><h3>Measure</h3><p>Track capacity, consistency, response quality, escalations, or other relevant KPIs.</p></div>
       </div>
     </div>
   </section>
 
-
-  <!-- TRAINING -->
-  <section class="training">
+  <section class="tools">
     <div class="container">
-
-      <div class="section-label">Professional Development</div>
-
-      <h2 class="section-title">
-        Building practical skills through continuous learning and hands-on projects.
-      </h2>
-
-      <div class="training-box">
-        <p>
-          My professional development includes virtual assistance, sales and lead generation,
-          digital business support, and AI automation. I focus on turning what I learn into
-          practical workflows and hands-on projects that solve real business problems.
-        </p>
+      <div class="section-label">Tools</div>
+      <h2 class="section-title">Technology is the toolbox, not the strategy.</h2>
+      <p class="section-description">Tools are selected based on the process, business risk, cost, reliability, and deployment needs.</p>
+      <div class="tool-groups">
+        <div class="tool-group"><h3>Automation & AI</h3><div class="tool-grid"><div class="tool">n8n</div><div class="tool">OpenRouter</div><div class="tool">ChatGPT</div><div class="tool">Zapier</div></div></div>
+        <div class="tool-group"><h3>Business Systems</h3><div class="tool-grid"><div class="tool">Google Sheets</div><div class="tool">Google Drive</div><div class="tool">Gmail</div><div class="tool">Google Calendar</div><div class="tool">Slack</div></div></div>
+        <div class="tool-group"><h3>Operations & Support</h3><div class="tool-grid"><div class="tool">Notion</div><div class="tool">Trello</div><div class="tool">Zendesk</div><div class="tool">Canva</div><div class="tool">CapCut</div></div></div>
       </div>
-
     </div>
   </section>
 
-
-  <!-- CTA -->
   <section class="cta" id="contact">
     <div class="container">
-
-      <h2>
-        Ready to make your business processes work smarter?
-      </h2>
-
-      <p>
-        Let's identify where repetitive work, manual steps, or disconnected processes 
-        are slowing things down and explore a practical way to improve them.
-      </p>
-
+      <h2>Find one process worth improving.</h2>
+      <p>I’ll look at where work, information, follow-up, or decisions are getting stuck and identify a practical way to simplify or automate the process. For selected early clients, I can start with a focused 7-day improvement project.</p>
       <div class="hero-buttons">
-     
-        <a
-          href="mailto:vajeramil01@gmail.com"
-          class="btn btn-primary"
-        >
-          Email Me
-        </a>
-
-        <a href="#projects" class="btn btn-secondary">
-          View Demo Projects
-        </a>
+        <a href="mailto:vajeramil01@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="#systems" class="btn btn-secondary">View Flagship Systems</a>
       </div>
-
     </div>
   </section>
 
-
-  <!-- FOOTER -->
   <footer>
-    <div class="container footer-inner">
-
-      <div>
-        <span class="footer-name">Jeramil S. Vegilla</span>
-        • AI Automation & Business Process Specialist
-      </div>
-
-      <div>
-        © 2026 Jeramil S. Vegilla
-      </div>
-
-    </div>
+    <div class="container footer-inner"><div><span class="footer-name">Jeramil S. Vegilla</span> • AI Automation & Business Process Specialist</div><div>© 2026 Jeramil S. Vegilla</div></div>
   </footer>
 
-
-  <!-- IMAGE MODAL -->
-  <div class="modal" id="imageModal" onclick="closeImage()">
-    <img id="modalImage" src="" alt="Expanded project image">
-  </div>
-
-
+  <div class="modal" id="imageModal" onclick="closeImage()"><img id="modalImage" src="" alt="Expanded project image"></div>
   <script>
-    function openImage(src) {
-      document.getElementById("modalImage").src = src;
-      document.getElementById("imageModal").classList.add("show");
-    }
-
-    function closeImage() {
-      document.getElementById("imageModal").classList.remove("show");
-    }
+    function openImage(src){document.getElementById('modalImage').src=src;document.getElementById('imageModal').classList.add('show');document.body.style.overflow='hidden'}
+    function closeImage(){document.getElementById('imageModal').classList.remove('show');document.body.style.overflow=''}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImage()})
   </script>
-
 </body>
 </html>
